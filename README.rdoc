@@ -2,6 +2,10 @@
 
 This is a log collector for multilog of daemontools services.
 
+== Install
+
+ sudo gem install multilog-collector
+
 == Usage
 
  Usage: multilog-collector [options]
