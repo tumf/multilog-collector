@@ -1,7 +1,13 @@
 = multilog-collector
 
-Description goes here.
+This is a log collector for multilog of daemontools services.
 
+== Usage
+
+ Usage: multilog-collector [options]
+        --help                       show this message
+    -d, --directory=DIR              service directory default: /service
+    
 == Contributing to multilog-collector
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
@@ -16,4 +22,5 @@ Description goes here.
 
 Copyright (c) 2011 Yoshihiro TAKAHARA. See LICENSE.txt for
 further details.
+
 
