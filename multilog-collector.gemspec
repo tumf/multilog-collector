@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{multilog-collector}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yoshihiro TAKAHARA"]
-  s.date = %q{2011-01-12}
+  s.date = %q{2011-01-16}
   s.description = %q{This is a log collector for multilog of daemontools services.}
   s.email = %q{y.takahara@gmail.com}
   s.executables = ["multilog-collector.rb", "multilog-collector"]
@@ -26,8 +26,11 @@ Gem::Specification.new do |s|
     "bin/multilog-collector",
     "bin/multilog-collector.rb",
     "lib/djb/daemontools/multilog/collector.rb",
+    "lib/djb/daemontools/multilog/log.rb",
+    "lib/djb/daemontools/multilog/logs.rb",
     "lib/djb/tai64n.rb",
     "lib/multilog-collector.rb",
+    "multilog-collector.gemspec",
     "test/helper.rb",
     "test/test_multilog-collector.rb"
   ]
