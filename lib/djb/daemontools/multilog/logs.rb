@@ -9,11 +9,8 @@ module Djb
         def load(file,lines = nil)
           @file = file
           open(file) do |f|
-            n = 0
             while line = f.gets
-              n += 1
               self << Log.new(line,service)
-              break if lines and n >= lines
             end
           end
           self

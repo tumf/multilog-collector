@@ -22,6 +22,7 @@ module Djb
           all.sort! do |a,b|
             a.time <=> b.time
           end
+          # all[all.length - @lines..-1]
           all[-@lines..-1]
         end
       end
