@@ -11,7 +11,8 @@ This is a log collector for multilog of daemontools services.
  Usage: multilog-collector [options]
         --help                       show this message
     -d, --directory=DIR              service directory default: /service
-    
+    -l, --lines=N                    lines to collect default: 100
+
 == Contributing to multilog-collector
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
