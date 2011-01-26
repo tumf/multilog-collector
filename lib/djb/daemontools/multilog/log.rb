@@ -5,9 +5,11 @@ module Djb
   module Daemontools
     module Multilog
       class Log 
+        attr_accessor :time
 
         def initialize(line,service)
           @line = line
+          @time = to_time
           @service = service
         end
 
@@ -15,7 +17,7 @@ module Djb
           return $1 if /^(@[a-z0-9]+) / =~ @line
         end
 
-        def time
+        def to_time
           Tai64n::to_local(tai64n)
         end
 

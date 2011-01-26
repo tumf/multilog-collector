@@ -10,7 +10,7 @@ module Djb
           @file = file
           open(file) do |f|
             while line = f.gets
-              self << Log.new(line,service)
+              self << Log.new(line,service) rescue {}
             end
           end
           self

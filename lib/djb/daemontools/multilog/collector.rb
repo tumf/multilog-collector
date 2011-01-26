@@ -6,7 +6,8 @@ module Djb
     module Multilog
       class Collector
         attr_accessor :service_dir,:lines
-        alias directory= service_dir=
+        alias :directory :service_dir
+        alias :directory= :service_dir=
 
         def initialize(dir = "/service")
           @lines = 100
@@ -23,7 +24,8 @@ module Djb
             a.time <=> b.time
           end
           # all[all.length - @lines..-1]
-          all[-@lines..-1]
+          lines = [@lines,all.length].min
+          all[-lines..-1]
         end
       end
       
