@@ -5,26 +5,27 @@
 
 Gem::Specification.new do |s|
   s.name = %q{multilog-collector}
-  s.version = "0.3.1"
+  s.version = "0.3.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yoshihiro TAKAHARA"]
-  s.date = %q{2011-01-16}
+  s.date = %q{2011-01-27}
+  s.default_executable = %q{multilog-collector}
   s.description = %q{This is a log collector for multilog of daemontools services.}
   s.email = %q{y.takahara@gmail.com}
-  s.executables = ["multilog-collector.rb", "multilog-collector"]
+  s.executables = ["multilog-collector"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
   s.files = [
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "bin/multilog-collector",
-    "bin/multilog-collector.rb",
     "lib/djb/daemontools/multilog/collector.rb",
     "lib/djb/daemontools/multilog/log.rb",
     "lib/djb/daemontools/multilog/logs.rb",
@@ -37,7 +38,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/tumf/multilog-collector}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.1}
+  s.rubygems_version = %q{1.3.7}
   s.summary = %q{log collector for multilog.}
   s.test_files = [
     "test/helper.rb",
@@ -45,6 +46,7 @@ Gem::Specification.new do |s|
   ]
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
