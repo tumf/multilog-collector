@@ -14,13 +14,20 @@ module Djb
           @service_dir = dir
         end
 
-        def collect
+        def glob_pattern
+          @service_dir + "/*/log/main/current"
+        end
+
+        def logs
           all = Logs.new
-          glob_pattern = @service_dir + "/*/log/main/current"
           Dir.glob(glob_pattern).each do |file| 
             all += Logs.new.load(file,@lines)
           end
-          all.sort! do |a,b|
+          all
+        end
+
+        def collect
+          all = logs.sort! do |a,b|
             a.time <=> b.time
           end
           # all[all.length - @lines..-1]

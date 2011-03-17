@@ -20,10 +20,6 @@ module Djb
           $1 if /\/([^\/]+)\/log\/main\/current/ =~ @file
         end
 
-        def to_s
-          join("\n",self)
-        end
-
       end
     end
   end
