@@ -28,4 +28,6 @@ This is a log collector for multilog of daemontools services.
 Copyright (c) 2011 Yoshihiro TAKAHARA. See LICENSE.txt for
 further details.
 
+{<img src="http://api.coderwall.com/tumf/endorsecount.png"/>}[http://coderwall.com/tumf]
+
 
