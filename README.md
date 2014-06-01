@@ -1,6 +1,7 @@
 # multilog-collector
 
 [![Build Status](https://travis-ci.org/tumf/multilog-collector.svg?branch=master)](https://travis-ci.org/tumf/multilog-collector)
+[![Coverage Status](https://coveralls.io/repos/tumf/multilog-collector/badge.png)](https://coveralls.io/r/tumf/multilog-collector)
 
 A log collector for multilog of daemontools services.
 
