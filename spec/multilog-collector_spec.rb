@@ -44,7 +44,7 @@ end
 describe Djb::Tai64n do
   describe ".to_local" do
     it "returns 2011-03-17 20:01:46.923072500" do
-      expect(Djb::Tai64n::to_local("@400000004d81ea243704f7f4")).to eq Time.parse("2011-03-17 20:01:46.923072500")
+      expect(Djb::Tai64n::to_local("@400000004d81ea243704f7f4")).to eq Time.parse("2011-03-17 20:01:46.923072500").gmtime
     end
   end
 end
