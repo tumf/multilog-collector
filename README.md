@@ -5,6 +5,8 @@
 
 A log collector for multilog of daemontools services.
 
+See also > [About multilog-collector on Qiita in Japanese](http://qiita.com/tumf/items/81d8d490e8c04651186d)
+
 ## Install
 
     gem install multilog-collector
